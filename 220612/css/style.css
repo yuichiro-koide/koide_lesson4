@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* 下記css  ヘッダー*/
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6.53% 0 2.51%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    width: 226.76px;
+}
+
+.pc_nav ul {
+    display: flex;
+}
+.pc_nav ul li {
+    width: 104px;
+    margin-right: 55px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.pc_nav ul li:last-child {
+    margin-right: 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* 中段 */
+.background {
+    background: #e8d9bf;
+}
+
+.happy {
+    text-align: center;
+    padding: 105px 0px 50px 0px;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 82px;
+    margin: 0px 0px 40px 0px;
+    line-height: 1.17;
+    font-weight: normal;
+}
+
+/* h3 {
+    text-align: center;
+} */
+
+.menu_logo {
+    width: 151px;
+    margin: auto;
+}
+
+.coffee {
+    font-size: 23px;
+    text-align: center;
+    margin: 30px;
+    line-height: 1.65;
+}
+
+/* aboutus */
+.aboutus_whole {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.aboutus_wrap img {
+    border-bottom-right-radius: 50px;
+}
+
+/* .aboutus_wrap img {
+    width: 50%;
+} */
+
+.aboutus_logo {
+    width: 272px;
+    margin: auto;
+}
+
+/* メニュー */
+.food_menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 90px;
+}
+/* 上のマージンの％がわからん */
+
+.menu_logo {
+    margin-bottom: 40px;
+}
+
+.menu_photo p {
+    line-height: 1.47;
+    /* %だと変になるのは？ */
+}
+
+h4 {
+    color: #d30202;
+    font-size: 38px;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    margin: -15px 0px 0px 0px;
+}
+
+.menu_text {
+    font-size: 17px;
+}
+
+.menu_photo {
+    width: 30%;
+}
+
+.menu_photo img {
+    border-top-right-radius: 50px;
+}
+
+/* ギャラリー */
+
+.gallery_logo {
+    width: 245px;
+    margin: auto;
+}
+
+.gallery_img {
+    display: flex;
+    width: 20%;
+    padding-top: 17px;
+    padding-bottom: 59px;
+}
+
+/* event */
+
+.event_logo {
+    width: 173px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.event_whole {
+    text-align: center;
+    max-width: 1000px;
+    border: 3.68px solid #4f260b;
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 68px;
+}
+
+.event_whole ul {
+    display: flex;
+}
+
+.event_whole ul li {
+    font-size: 23px;
+}
+
+/* access */
+.map iframe {
+    width: 100%;
+    height: 471px;
+    vertical-align: bottom;
+}
+
+.access_logo {
+    width: 214px;
+    margin: auto;
+    padding-bottom: 37px;
+}
+
+/* footer */
+
+.footer_wrap {
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 74px;
+}
+.footer_logo {
+    width: 227px;
+}
+.footer_wrap {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer_text {
+    font-size: 20px;
+}
+
+.footer_text p {
+    line-height: 1.95;
+    margin-left: 65px;
+    color: black;
+}
+
+.footer_web {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: black;
+}
+
+.topbutton {
+    width: 125px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
