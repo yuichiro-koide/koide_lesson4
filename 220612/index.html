@@ -8,6 +8,8 @@
     <title>カフェのサイト作成</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -24,10 +26,28 @@
                     <li><a href="">ACCESS</a></li>
                 </ul>
             </nav>
+
+            <div class="btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">GALLARY</a></li>
+                    <li><a href="">EVENT</a></li>
+                    <li><a href="">ACCESS</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <ul class="slider">
-        <li><img src="images/pc_first-100.jpg"></li>
+        <li>
+            <picture>
+                <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                <img src="images/pc_first-100.jpg">
+            </picture>
+        </li>
     </ul>
     <!-- ヘッダー終わり -->
     <div class="background">
@@ -41,7 +61,7 @@
         <!-- About us -->
         <div class="aboutus_whole">
             <div class="aboutus_wrap">
-                <img src="images/about_us@2x-100.jpg" alt="乾杯">
+                <img src="images/pc_about-100.jpg" alt="乾杯">
             </div>
             <div class="aboutus_right">
                 <h3 class="aboutus_logo"><img src="images/about_us@2x.png" alt="aboutus"></h3>
@@ -91,7 +111,7 @@
 
 
         <div class="event_whole">
-            <ul>
+            <!-- <ul>
                 <li>2020.06.23</li>
                 <li>7月はイベント出店のため0/0お休みします</li>
             </ul>
@@ -102,6 +122,12 @@
             <ul>
                 <li>2020.02.06</li>
                 <li>コーヒーの日で30％OFFイベントを開催［3日間限定］</li>
+            </ul> -->
+
+            <ul>
+                <li>2020.06.23<span>7月はイベント出店のため0/0お休みします</span></li>
+                <li>2020.03.15<span>春の新商品新発売。話題のあのブランドとコラボ</span></li>
+                <li>2020.02.06<span>コーヒーの日で30％OFFイベントを開催［3日間限定］</span></li>
             </ul>
 
         </div>
@@ -136,6 +162,20 @@
     <div class="footer_web">© 2021 DESIGN CAFE</div>
 
     <a href="#header"><img class="topbutton" src="images/to_top@2x.png" alt="トップボタン"></a>
+
+
+
+    <script>
+        $(function () {
+            $('.btn').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.btn').toggleClass('open');
+            });
+
+        });
+    </script>
+
+
 </body>
 
 </html>
