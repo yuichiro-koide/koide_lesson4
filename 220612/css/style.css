@@ -131,6 +131,8 @@ h2 {
     max-width: 1000px;
     margin-bottom: 100px;
     /* text-align: center; */
+    align-items: center;
+    padding: 0 10px;
 }
 
 .aboutus_wrap img {
@@ -227,9 +229,10 @@ h4 {
     max-width: 1000px;
     border: 3.68px solid #4f260b;
     background: #fff;
-    padding: 40px;
+    padding: 40px 0px;
     /* margin-bottom: 68px; */
     margin: 0 auto 68px;
+    box-sizing: border-box;
 }
 /* どの部分が６８pxなの？ */
 
@@ -240,6 +243,7 @@ h4 {
     font-size: 23px;
     text-align: left;
     padding-left: 162px;
+    /* padding邪魔 */
     line-height: 1.95;
 }
 /* 多分paddingで取る方法より良い方法があるはず */
@@ -299,6 +303,7 @@ h4 {
     color: black;
 }
 
+/* ここから下レスポンシブ用 */
 .topbutton {
     width: 125px;
     position: fixed;
@@ -314,10 +319,31 @@ h4 {
     display: none;
     cursor: pointer;
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 10px;
     height: 30px;
     z-index: 100;
+}
+.sp_footer_wrap {
+    display: none;
+    width: 60%;
+}
+.sp_footer_text {
+    font-size: 18px;
+}
+
+.sp_footer {
+    margin-top: 80px;
+    margin-bottom: 74px;
+}
+
+.sp_footer_text p {
+    line-height: 1.95;
+    color: black;
+}
+
+.sp_event_whole {
+    display: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -396,5 +422,133 @@ h4 {
         font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
             "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
             "MS Ｐ明朝", "MS 明朝", serif;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 10vw;
+        /* 上のはこれでいい？元々は82pxだけどこんなにサイズ下がるの？ */
+    }
+
+    .coffee {
+        font-size: 16px;
+    }
+    /* aboutus */
+    .aboutus_whole {
+        display: none;
+    }
+
+    .sp_aboutus_logo {
+        width: 160px;
+        margin: auto;
+        padding-bottom: 17px;
+    }
+
+    .sp_aboutus_whole {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .sp_aboutus_right {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sp_aboutus_title {
+        font-size: 36px;
+        padding-bottom: 20px;
+        line-height: 1.25;
+    }
+
+    .sp_aboutus_wrap img {
+        width: 100%;
+    }
+
+    .sp_aboutus_wrap img {
+        border-bottom-right-radius: 0px;
+        padding-bottom: 35px;
+    }
+    .sp_aboutus_text {
+        line-height: 1.75;
+        padding-bottom: 60px;
+    }
+
+    /* menu/ */
+    .food_menu {
+        display: block;
+        /* margin: auto;なんでここだとCSS効かへんの？ */
+    }
+
+    .menu_text {
+        font-size: 17px;
+        line-height: 1.5;
+        padding-bottom: 42px;
+    }
+
+    .menu_photo {
+        margin: auto;
+        width: 80%;
+        /* max-widthだとダメな理由は？ */
+    }
+
+    .menu_photo h4 {
+        padding-bottom: 5px;
+    }
+
+    /* gallery */
+    .gallery_img {
+        display: block;
+
+        margin: auto;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    .gallery_img img {
+        width: 100%;
+        /* もし画像５まいのうち４枚を消したいとしたらどうしたらいい？（HTMLをdivで囲って行う？） */
+    }
+
+    /* event */
+
+    .sp_event_whole {
+        font-size: 4vw;
+        margin-left: 0px;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sp_event_whole li {
+        font-size: 23px;
+        text-align: left;
+        line-height: 1.95;
+    }
+
+    .event_whole ul {
+        display: none;
+        /* font-size: 4vw;
+        margin-left: 0px;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+    }
+
+    /* access  */
+
+    /* footer  */
+    .footer {
+        display: none;
+    }
+
+    .sp_footer_logo {
+        padding-bottom: 28px;
+    }
+
+    .sp_footer_wrap {
+        display: block;
     }
 }
