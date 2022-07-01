@@ -315,6 +315,10 @@ h4 {
     display: none;
 }
 
+.sp_aboutus_whole {
+    display: none;
+}
+
 .btn {
     display: none;
     cursor: pointer;
@@ -494,6 +498,8 @@ h4 {
 
     .menu_photo h4 {
         padding-bottom: 5px;
+        font-weight: 100;
+        /* 上のは文字をmediumにしたかったけど、やり方がわからなかったから100でウェイト落としたけどいいの？ */
     }
 
     /* gallery */
@@ -512,29 +518,28 @@ h4 {
 
     /* event */
 
-    .sp_event_whole {
-        font-size: 4vw;
-        margin-left: 0px;
-        white-space: nowrap;
-        width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .sp_event_whole li {
-        font-size: 23px;
-        text-align: left;
-        line-height: 1.95;
-    }
-
-    .event_whole ul {
+    .event_whole {
         display: none;
-        /* font-size: 4vw;
-        margin-left: 0px;
+    }
+
+    .sp_event_whole {
+        color: #4f260b;
+        font-size: 4vw;
+        /* margin-left: 0px;
         white-space: nowrap;
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis; */
+    }
+
+    .sp_event_whole li {
+        font-size: 23px;
+
+        line-height: 1.95;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     /* access  */
