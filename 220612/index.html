@@ -54,8 +54,8 @@
         <!-- 中段開始 -->
         <p class="happy">Have a happy day From a cup of coffee.</p>
         <h2>ハッピーに溢れる1日を<br>1杯のコーヒーから。</h2>
-        <p class="coffee">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+        <p class="coffee">毎日を丁寧に大切に過ごしたい。<br class="coffee_gap">だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            足を運んでくれるお客さんには落ち着く空間と<br class="coffee_gap">こだわりのコーヒーを提供したい。
         </p>
 
         <!-- About us -->
@@ -76,7 +76,7 @@
         <div class="sp_aboutus_whole">
             <h3 class="sp_aboutus_logo"><img src="images/about_us@2x.png" alt="aboutus"></h3>
             <div class="sp_aboutus_wrap">
-                <img src="images/pc_about-100.jpg" alt="乾杯">
+                <img src="images/about_us@2x-100.jpg" alt="乾杯">
             </div>
             <div class="sp_aboutus_right">
                 <p class="sp_aboutus_title">私たちが提供する<br>こだわりのコーヒー</p>
@@ -93,17 +93,26 @@
 
         <div class="food_menu">
             <div class="menu_photo">
-                <img src="images/drink_sp@2x-100.jpg" alt="drink">
+                <picture>
+                    <source srcset="images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_menu_drink-100.jpg" alt="drink">
+                </picture>
                 <h4>Drink</h4>
                 <P class="menu_text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</P>
             </div>
             <div class="menu_photo">
-                <img src="images/food_sp@2x-100.jpg" alt="food">
+                <picture>
+                    <source srcset="images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_menu_food-100.jpg" alt="food">
+                </picture>
                 <h4>Food</h4>
                 <P class="menu_text">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</P>
             </div>
             <div class="menu_photo">
-                <img src="images/cake_sp@2x-100.jpg" alt="sweets ">
+                <picture>
+                    <source srcset="images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_menu_sweets-100.jpg" alt="sweets ">
+                </picture>
                 <h4>Sweets</h4>
                 <P class="menu_text">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</P>
             </div>
@@ -120,6 +129,9 @@
             <img src="images/pc_gallary_01-100.jpg" alt="ラテアート">
         </div>
 
+        <div class="sp_gallery_img">
+            <img src="images/mobile_gallery-100.jpg" alt="カフェ内装">
+        </div>
 
         <!-- eventロゴ以下 -->
         <h3 class="event_logo"><img src="images/event@2x.png" alt="event"></h3>
