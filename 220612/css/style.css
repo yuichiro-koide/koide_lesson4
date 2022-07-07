@@ -315,6 +315,15 @@ h4 {
     color: #fff;
 }
 
+.slick-prev {
+    left: 0px;
+    z-index: 100;
+}
+.slick-next {
+    right: 0px;
+    z-index: 100;
+}
+
 /* ここから下レスポンシブ用 */
 .topbutton {
     width: 125px;
@@ -547,9 +556,9 @@ h4 {
         margin-bottom: 16px;
     }
 
-    .gallery_img {
+    /* .gallery_img {
         display: none;
-    }
+    } */
 
     /* .sp_gallery_img {
         display: block;
@@ -574,9 +583,9 @@ h4 {
     }
 
     /* ギャラリーのスライドで重複してる写真を消したかったが。できない */
-    /* .gallery_none {
-        display: none;
-    } */
+    .gallery_none {
+        display: none !important;
+    }
     /* event */
 
     .event_whole {
